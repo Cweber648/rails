@@ -1,0 +1,8 @@
+
+<div class="concert-list">
+  <ul class="list-group">
+  <% @concerts.each do |concert| %>
+  <li class="list-group-item"><p><b><%= link_to concert.band %></b>
+  Venue: <%= concert.venue  %> </p></li>
+    <% end  %>
+  </div>
